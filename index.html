@@ -344,39 +344,7 @@ Software based modeling, Estimation, Project Scheduling, Architectural Design, P
                             <ul class="list-unstyled">
                                 <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">ABC 2020</a> (San Francisco)</li>
                                
-                                import { ZoomMtg } from '@zoomus/websdk'
-
-ZoomMtg.preLoadWasm();
-ZoomMtg.prepareJssdk();
-
-getSignature(meetConfig) {
-	fetch(`${YOUR_SIGNATURE_ENDPOINT}`, {
-			method: 'POST',
-			body: JSON.stringify({ meetingData: meetConfig })
-		})
-		.then(result => result.text())
-		.then(response => {
-			ZoomMtg.init({
-				leaveUrl: meetConfig.leaveUrl,
-				isSupportAV: true,
-				success: function() {
-					ZoomMtg.join({
-						signature: response,
-						apiKey: meetConfig.apiKey,
-						meetingNumber: meetConfig.meetingNumber,
-						userName: meetConfig.userName,
-						// password optional; set by Host
-						passWord: meetConfig.passWord 
-						error(res) { 
-							console.log(res) 
-						}
-					})		
-				}
-			})
-	}
-}
-
-                                
+                                          
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
