@@ -7,151 +7,256 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Prashnna Ghimire">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
     
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,700' rel='stylesheet'>
     
     <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
     
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github activity css -->    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
-</head> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .nav-tabs {
+            border-bottom: none;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .nav-tabs .nav-item {
+            margin-bottom: -1px;
+        }
+        .nav-tabs .nav-link {
+            border: 1px solid transparent;
+            border-radius: 0;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            color: #007bff;
+            background-color: #f8f9fa;
+            border-color: #e9ecef #e9ecef #dee2e6;
+        }
+        .nav-tabs .nav-link:hover {
+            color: #0056b3;
+            background-color: #e9ecef;
+        }
+        .nav-tabs .nav-link.active {
+            color: #495057;
+            background-color: #fff;
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+        .tab-content {
+            padding: 2rem 0;
+        }
+        .tab-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .header h2 {
+            font-size: 1.5rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
 
 <body>
     <!-- ******HEADER****** --> 
     <header class="header">
-        <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left" src="assets/images/2.jpg" alt="Prashnna Ghimire" />
-            <div class="profile-content float-left">
-                <h1 class="name">Prashnna Ghimire</h1>
-                <h2 class="desc">PhD Candidate | Architect</h2>   
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://twitter.com/prashnna_PG"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/prashnna-g-b36274110/"><i class="fab fa-linkedin-in"></i></a></li>                 
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="mailto:prashnnag@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
-        </div><!--//container-->
-    </header><!--//header-->
+        <img class="profile-image" src="assets/images/2.jpg" alt="Prashnna Ghimire" />
+        <h1 class="name">Prashnna Ghimire</h1>
+        <h2 class="desc">PhD Student | Architect</h2>
+        <ul class="social list-inline">
+            <li class="list-inline-item"><a href="https://twitter.com/prashnna_PG"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/prashnna-g-b36274110/"><i class="fab fa-linkedin-in"></i></a></li>                 
+        </ul> 
+        <a class="btn btn-primary" href="mailto:prashnnag@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>
+    </header>
     
-    <div class="container sections-wrapper">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
-            </li>
+    <!-- Tab Navigation -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="research-tab" data-toggle="tab" href="#research" role="tab" aria-controls="research" aria-selected="false">Research</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="teaching-tab" data-toggle="tab" href="#teaching" role="tab" aria-controls="teaching" aria-selected="false">Teaching</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">News</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="events-tab" data-toggle="tab" href="#events" role="tab" aria-controls="events" aria-selected="false">Events</a>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content container" id="myTabContent">
+        <!-- About Section -->
+        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <h2>About Me</h2>
+            <p>AEC Professional leveraging the latest AI, BIM/VDC technology. I have more than 6 years of research, more than 6 years of industry experience inside the US and overseas, and 7 semesters of teaching experience in allied fields such as Architecture, Engineering, and Construction.</p>
+            <p>Continuing Learning/Interests: AI, Data Analytics, Computational BIM, Digital Twin, Sustainability, IPD, Mixed Method Research.</p>
+        </div>
+
+        <!-- Research Section -->
+        <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
+            <h2>Research</h2>
+            <p>I have worked on various research projects, including the development of seismic-resistant housing, integration of AI in construction, and exploring digital twin technology. I have presented my research at several conferences and have published papers on BIM and VDC technologies.</p>
+        </div>
+
+<!-- Experience Section -->
+<div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+    <h2>Work Experience</h2>
+
+    <div class="item">
+        <h3 class="title">Artificial Intelligence (AI) Specialist - MCL Construction | Omaha, NE, USA</h3>
+        <span class="year">2 Months (August 2024 - Current)</span>
+        <p><strong>Roles:</strong> Providing research and development on AI strategies that provide measurable return on investment for the organization. Seamlessly integrating AI technologies into various systems, processes, and applications within the organization. Leveraging AI technologies to drive innovation, efficiency, and competitiveness within the organization.</p>
+        <p><strong>Projects:</strong></p>
+        <ul>
+            <li>Research and development for Azure-based ML deployment ecosystem within organization</li>
+            <li>Generative AI framework & workflow development for pre-construction decisions</li>
+            <li>Organization-wide Data Mining & Centralization</li>
+            <li>AI integration on horizontal and vertical layers within organization</li>
         </ul>
+    </div>
 
-        <div class="tab-content" id="myTabContent">
-            <!-- About Section -->
-            <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>Ph.D. Candidate/Architect/ AEC Professional leveraging the latest AI, BIM/VDC technology. I have more than 6 years of research, more than 6 years of industry experience inside the US and overseas, and 7 semesters of teaching experience in allied fields such as Architecture, Engineering, and Construction, in a blended form.</p>
-                            <p>Continuing Learning/Interests: AI, Data Analytics, Computational BIM, Digital Twin, Sustainability, IPD, Mixed Method Research</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+    <div class="item">
+        <h3 class="title">BIM Manager - The Pike Company | New York, NY, USA</h3>
+        <span class="year">1 Year 4 Months (Jan 2019 - April 2020)</span>
+        <p><strong>Roles:</strong> Conducting BIM Coordination Meetings, Preparing and Monitoring BIM Budgets and Schedules, Developing and Implementing BIM Execution Plan (BEP) & BIM Workflow, Providing BIM Training, Oversee Company-wide BIM Software, and VDC Technology Works, Quality Control, Scan to BIM.</p>
+        <p><strong>Projects (Total Budget ~ USD 400 Million):</strong></p>
+        <ul>
+            <li>Canandaigua VA Medical Center, Canandaigua, New York, USA</li>
+            <li>St. Ann's Renovation, Rochester, New York, USA</li>
+            <li>Buffalo Niagara International Airport Terminal, New York, USA</li>
+            <li>G&C Foods, Syracuse, New York, USA</li>
+            <li>Walmart, Thomasville, Georgia, USA</li>
+            <li>Asheville Regional Airport Runway, North Carolina, USA</li>
+        </ul>
+    </div>
 
-            <!-- Projects Section -->
-            <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
-                <section class="projects section">
-                    <div class="section-inner">
-                        <h2 class="heading">Projects</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="#">BIM/VDC Services</a></h3>
-                                <img class="img-fluid project-image" src="assets/images/projects/project-1.png" alt="project name" />
-                                <p>BIM VDC Services</p>
-                            </div>
-                            <div class="item">
-                                <h3 class="title"><a href="#">Seismic Nepal Model G-2.1</a></h3>
-                                <p>The 2015 earthquake exposed the realities and challenges of seismic-resistant architecture in high elevation rural areas. Our proposed gabion design presents the challenges, solutions, economics, and benefits for the people living in high elevation villages.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+    <div class="item">
+        <h3 class="title">Senior Engineer - Nepal Mission, People in Need (PIN) | Prague, Czech Republic</h3>
+        <span class="year">1 Year (April 2016 - April 2017)</span>
+        <p><strong>Roles:</strong> Design developments re-using demolished building materials, 4D Simulation, BIM Coordination, Bidding & Procurement, Bidding & Contract Administration, Engineering Team Coordination & Supervision, Lean Implementation, Safety Management, and Report Writing.</p>
+        <p><strong>Projects (Total Budget ~ USD 6 Million):</strong></p>
+        <ul>
+            <li>DFID (Department for International Development, UK) Project: Post Disaster Recovery Program - 125 km trail and 15 Public Buildings</li>
+            <li>IOM (International Organization for Migration, UN) Project: 2 Community Buildings</li>
+            <li>ECHO (European Commission) Project: Trail Development</li>
+            <li>SOS & Czech Radio Project: Community-driven Infrastructure - 4 Earthquake Resilient Community Buildings, Water Supply & Irrigation</li>
+        </ul>
+    </div>
 
-            <!-- Experience Section -->
-            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">BIM Manager - <a href="https://www.thepikecompany.com/">The Pike Company</a></h3>
-                                <span class="year">(2019 - 2020)</span>
-                            </div>
-                            <div class="item">
-                                <h3 class="title">Graduate Teaching Assistant - <a href="https://www.auburn.edu/">Auburn University</a></h3>
-                                <span class="year">(2017 - 2018)</span>
-                            </div>
-                            <!-- Add more experiences here -->
-                        </div>
-                    </div>
-                </section>
-            </div>
+    <div class="item">
+        <h3 class="title">Coordinating Engineer - Nepal Mission, People in Need (PIN) | Prague, Czech Republic</h3>
+        <span class="year">1 Year (May 2015 - April 2016)</span>
+        <p><strong>Roles:</strong> Design, 3D Modeling, 4D Simulation, Scheduling, Estimation, Project Team Coordination & Supervision, Constructability Analysis, Risk Analysis.</p>
+        <p><strong>Projects (Total Budget ~ USD 4 Million):</strong></p>
+        <ul>
+            <li>Gabion House Building Construction Technology: Design and Structural Analysis of Gabion House Model for National Building Code (for the first time in Nepal)</li>
+            <li>DFID Project: 3 Temporary and 2 Permanent Model Building Structures (with Vernacular Building Material)</li>
+        </ul>
+    </div>
 
-            <!-- Education Section -->
-            <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
-                <section class="education section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">PhD in Engineering - <a href="https://www.unl.edu/">University of Nebraska-Lincoln</a></h3>
-                                <span class="year">(2020-Present)</span>
-                            </div>
-                            <div class="item">
-                                <h3 class="title">Master's in Building Construction - <a href="https://www.auburn.edu/">Auburn University</a></h3>
-                                <span class="year">(2017-2018)</span>
-                            </div>
-                            <div class="item">
-                                <h3 class="title">Bachelor in Architecture - <a href="https://pcampus.edu.np/department-of-architecture/">Tribhuvan University</a></h3>
-                                <span class="year">(2009-2014)</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+    <div class="item">
+        <h3 class="title">Assistant Construction Manager - G.Tec. Construction & Engineering | Kathmandu, Nepal</h3>
+        <span class="year">8 Months (October 2014 - May 2015)</span>
+        <p><strong>Roles:</strong> 3D Model Coordination, Estimation, Coordination with Subs, Quality Control, Assisting in RFI’s, Change Orders, and Submittals, Document Control.</p>
+        <p><strong>Projects (Total Budget ~ USD 3 Million):</strong></p>
+        <ul>
+            <li>Satdobato Healthcare Building</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h3 class="title">Site Supervisor (Part-time) - G.Tec. Construction & Engineering | Kathmandu, Nepal</h3>
+        <span class="year">1 Year 5 Months (May 2013 - September 2014)</span>
+        <p><strong>Roles:</strong> Onsite Coordination, Monitoring Progress, Daily Plan & Report, Survey, Project Layout, Material Management.</p>
+        <p><strong>Projects (Total Budget ~ USD 2 Million):</strong></p>
+        <ul>
+            <li>Gwarko Commercial Building</li>
+            <li>Lalitpur Elementary School</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h3 class="title">Architect Intern - A-Not Architecture N Architects | Lalitpur, Nepal</h3>
+        <span class="year">6 Months (October 2012 - March 2013)</span>
+        <p><strong>Roles:</strong> Architectural Design, 3D Modeling (Sketch Up), Drafting Construction Drawing (AutoCAD), Structural Drawing, Estimation.</p>
+        <p><strong>Projects (Total Budget ~ USD 4 Million):</strong></p>
+        <ul>
+            <li>Anju Residential Building</li>
+            <li>Jhapa Commercial Building</li>
+            <li>Jagannath School</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h3 class="title">Additional Projects</h3>
+        <p><strong>Projects as Freelancing Design Architect (Total Budget ~ USD 1 Million):</strong></p>
+        <ul>
+            <li>Rainaskot Village Redevelopment, Lamjung, Nepal: First Model Village Reconstruction after 2015 Earthquakes, 15 Residential Buildings Design and Construction Supervision</li>
+            <li>Three Residential Buildings in Kathmandu, One K12 School in Gorkha</li>
+        </ul>
+    </div>
+</div>
+
+        <!-- Teaching Section -->
+        <div class="tab-pane fade" id="teaching" role="tabpanel" aria-labelledby="teaching-tab">
+            <h2>Teaching</h2>
+            <p>Over the past 7 semesters, I have taught various courses related to architecture, BIM, and VDC. My approach to teaching focuses on integrating technology into traditional construction methods to better prepare students for the future of the industry.</p>
+        </div>
+
+        <!-- News Section -->
+        <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news-tab">
+            <h2>News</h2>
+            <p>Latest updates about my professional and academic life, including research milestones, conference presentations, and other professional news.</p>
+        </div>
+
+        <!-- Events Section -->
+        <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for upcoming events, workshops, and conferences that I will be participating in or organizing.</p>
         </div>
     </div>
-    
+
     <!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="container text-center">
-            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
         </div>
     </footer>
- 
+
     <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
 </body>
 </html>
